@@ -1,5 +1,5 @@
-# require 'chronic'
-# require 'colorize'
+require 'chronic'
+require 'colorize'
 # Find a third gem of your choice and add it to your project
 require 'date'
 require_relative "lib/listable"
@@ -22,7 +22,7 @@ list.all
 
 # SHOULD CREATE AN UNTITLED LIST AND ADD ITEMS TO IT
 # --------------------------------------------------
-# new_list = UdaciList.new # Should create a list called "Untitled List"
+# new_list = UdaciList.new(title: "Untitled List") # Should create a list called "Untitled List"
 # new_list.add("todo", "Buy more dog food", due: "in 5 weeks", priority: "medium")
 # new_list.add("todo", "Go dancing", due: "in 2 hours")
 # new_list.add("todo", "Buy groceries", priority: "high")
@@ -41,7 +41,6 @@ list.all
 # DISPLAY UNTITLED LIST
 # ---------------------
 # new_list.all
-
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
 # new_list.filter("event")
