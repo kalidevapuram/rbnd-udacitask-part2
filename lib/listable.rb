@@ -25,9 +25,9 @@ if (date.length == 1 ) || (date.length == 0 )
 	raise UdaciListErrors::HighPriorityError, "InvalidPriorityValue"
 	
 	else
-		value = " ⇧".colorize(:color => :green)if @priority == "high"
-    	value = " ⇨".colorize(:color => :yellow) if @priority == "medium"
-    	value = " ⇩".colorize(:color => :red) if @priority == "low"
+		value = " ⇧⇧".colorize(:color => :green)if @priority == "high"
+    	value = " ⇨ ⇨".colorize(:color => :yellow) if @priority == "medium"
+    	value = " ⇩ ⇩".colorize(:color => :red) if @priority == "low"
     	value = " " if !@priority
     	return value
     end

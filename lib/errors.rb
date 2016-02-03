@@ -1,5 +1,5 @@
 module UdaciListErrors
-#   # Error classes go here
+   # Error classes go here
   class ImageError < StandardError
   end
   class DeleteError < StandardError
