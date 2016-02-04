@@ -1,8 +1,8 @@
 require 'chronic'
 require 'colorize'
 # Find a third gem of your choice and add it to your project
-require 'artii'
-require 'terminal-table'
+require 'artii' #gem which display Julia's Stuff and Untitled in ascii character
+require 'terminal-table'   #gem to print the output in table format
 require 'date'
 require_relative "lib/listable"
 require_relative "lib/errors"
@@ -22,7 +22,6 @@ list.artii
 list.all
 list.delete(3)
 list.all
-# list.added_table
 
 # SHOULD CREATE AN UNTITLED LIST AND ADD ITEMS TO IT
 # --------------------------------------------------
@@ -35,7 +34,6 @@ new_list.add("event", "Vacation", start_date: "Dec 20", end_date: "Dec 30")
 new_list.add("event", "Life happens")
 new_list.add("link", "https://www.udacity.com/", site_name: "Udacity Homepage")
 new_list.add("link", "http://ruby-doc.org")
-# array.length = 8, upto_indx=0-7
 
 # SHOULD RETURN ERROR MESSAGES
 # ----------------------------
@@ -55,6 +53,10 @@ new_list.filter("event")
 #ADDING NEW FEATURES
 #-------------------
 new_list.find(5)
-new_list.delete(1,2)
+puts "\n"
+puts "=>Adding new features=>"
+puts "\n"
+puts "Deleting multiple items from an array:"
+new_list.delete(5,6)
 new_list.all
 

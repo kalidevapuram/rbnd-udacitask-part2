@@ -1,13 +1,30 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+I used mainly two gems artii, terminal_table.
+I installed both of the gems and by checking their basic syntax i used them.
+I used terminal_table gem to print the output in clear table format
+
+
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) Feature 1…multiple deletion , which it deletes multiple items at the same time.
+
+  b) Feature 2…installed terminal_table ruby gem, in which it displays the output in table format.
+
+c)Feature 3….displayed the item type as one of the column in the output 
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+I spent almost 6hrs to get the project succeed without any errors. 
+
 2. What was the most rewarding challenge you conquered?
+After installing terminal table gem, understanding the syntax of that gem take time.
+
 3. What two additional features did you build? Why?
+Firstly i added multiple deletion, instead of calling the delete method every time, it deletes the multiple items in array at a time.
+Second feature i used terminal table gem, to see the output in clear way.
+I also printed item type to clearly get an idea which type it is.
+
 4. Where do you still have room to grow?
+I still have to learn more about different types of gems, have to work more on modules and have to do these more of these kind of projects.

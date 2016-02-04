@@ -1,31 +1,21 @@
 class TodoItem
-  include Listable
-  attr_reader :description, :due, :priority
+	include Listable   #includes listable module
+  	attr_reader :description, :due, :priority
 
-  def initialize(description, options={})
-    @description = description
-    @due = options[:due] ? Chronic.parse(options[:due]) : options[:due]
-    @priority = options[:priority]
-  end
- 
+  	def initialize(description, options={})  #Initalizes a variable 
+    	@description = description
+    	@due = options[:due] ? Chronic.parse(options[:due]) : options[:due]
+    	@priority = options[:priority]
+  	end
   
-  # def details
-#     format_description(@description) + "due: " +
-#     format_date(@due) + 
-#     format_priority(@priority)
-#   end
   
-  def add_description
-  format_description(@description)
-  end 
-  def add_date
-  "due: " + format_date(@due) 
-  end
+  	def add_date  #add the due date
+  		"due: " + format_date(@due) 
+  	end
+  	
   
-  def add_priority
-  format_priority(@priority)
-  end
-  def add_type
-  "todo"
-  end
+  	def add_type
+  		"todo" #prints the item type as todo
+  	end
+  
 end
